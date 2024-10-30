@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda de Accesorios</title>
   <link rel="stylesheet" href="estilo.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .producto-item {
+      display: inline-block;
+      width: 200px; /* Ajusta el ancho según necesites */
+      text-align: center;
+      margin: 15px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      border-radius: 8px; /* Bordes ligeramente redondeados */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .producto-item img {
+      width: 100%;
+      border-radius: 8px 8px 0 0; /* Redondeo superior para la imagen */
+    }
+
+    .producto-item h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .producto-item:hover {
+      transform: translateY(-5px); /* Efecto de elevación */
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+    }
+  </style>
 </head>
 <body>
 
@@ -19,23 +49,50 @@
     </nav>
   </header>
 
-  <!-- Main Body -->
-  <div>
-
-    <img src="imagenes/caratula-fondo.jpg" alt="Joyería con significado" style="width:100%;">
+  <!-- Main Body with Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/caratula-fondo.jpg" class="d-block w-100" alt="Joyería con significado">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo2.jpg" class="d-block w-100" alt="Segunda imagen">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo4.jpg" class="d-block w-100" alt="Tercera imagen">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo3.jpg" class="d-block w-100" alt="Cuarta imagen">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
   </div>
+
+  <!-- Product Cards Section -->
   <main class="productos">
-    
     <a href="rock.html" class="producto-item">
-      <img src="imagenes/portada-rock.jpg"Rock">
+      <img src="imagenes/portada-rock.jpg" alt="Rock">
       <h3>Rock</h3>
     </a>
     <a href="religioso.html" class="producto-item">
-      <img src="imagenes/portada-religioso.jpg.jpg" alt="Religioso">
+      <img src="imagenes/portada-religioso.jpg" alt="Religioso">
       <h3>Religioso</h3>
     </a>
     <a href="mistica.html" class="producto-item">
-      <img src="imagenes/portada-rock.jpg" alt="Mística">
+      <img src="imagenes/portada-mistica.jpg" alt="Mística">
       <h3>Mística</h3>
     </a>
     <a href="paws_love.html" class="producto-item">
@@ -43,7 +100,7 @@
       <h3>Paws & Love</h3>
     </a>
     <a href="deportes.html" class="producto-item">
-      <img src="imagenes/portada-deportes.jpg.jpg" alt="Deportes">
+      <img src="imagenes/portada-deportes.jpg" alt="Deportes">
       <h3>Deportes</h3>
     </a>
     <a href="abstracto.html" class="producto-item">
@@ -51,16 +108,15 @@
       <h3>Abstracto</h3>
     </a>
     <a href="gauchesco.html" class="producto-item">
-        <img src="imagenes/portada-rock.jpg" alt="gauchesco">
-        <h3>Gauchesco</h3>
-      </a>
+      <img src="imagenes/portada-gauchesco.jpg" alt="Gauchesco">
+      <h3>Gauchesco</h3>
+    </a>
     <a href="ocasion.html" class="producto-item">
-        <img src="imagenes/portada-ocasion.jpg.jpg" alt="Ocasión">
-        <h3>Joyas de Ocasión</h3>
-      </a>
-
+      <img src="imagenes/portada-ocasion.jpg" alt="Ocasión">
+      <h3>Joyas de Ocasión</h3>
+    </a>
   </main>
-g
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-item">Redes Sociales</div>
@@ -68,5 +124,9 @@ g
     <div class="footer-item">Términos y Condiciones</div>
   </footer>
 
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
