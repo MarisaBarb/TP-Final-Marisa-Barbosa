@@ -14,7 +14,7 @@
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: 1rem;
-    background-color: #214a96;
+    background-color: #3b779c;
     color: #794a4a;
   }
   
@@ -68,7 +68,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 1rem;
-    background-color: #333;
+    background-color: #4a7ca0;
     color: #fff;
     text-align: center;
   }
