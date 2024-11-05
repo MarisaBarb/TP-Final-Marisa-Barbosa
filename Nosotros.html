@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyeria On-Line</title>
+  <link rel="stylesheet" href="estilo.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .producto-item {
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+      margin: 15px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .producto-item img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .producto-item h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .producto-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    main {
+      width: 80%;
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      gap: 20px;
+    }
+
+    .about-map-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .about, .map {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form form {
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background-color: #5a67d8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .contact-form button:hover {
+      background-color: #434190;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagenes/isotipo transparente.svg" width="5%" alt="Joyería on-line">
+    </div>
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="index.html">Productos</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Main Body with Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/caratula-fondo.jpg" class="d-block w-100" alt="Joyería con significado">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo2.jpg" class="d-block w-100" alt="Segunda imagen">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo4.jpg" class="d-block w-100" alt="Tercera imagen">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo3.jpg" class="d-block w-100" alt="Cuarta imagen">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Sección de texto sobre la empresa y mapa -->
+    <div class="about-map-section">
+      <!-- Sección de texto sobre la empresa -->
+      <div class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Desde hace más de 30 años, nuestra familia de joyeros ha estado dedicada a crear piezas  que reflejan la cultura y la pasión de nuestra gente. Nuestra trayectoria nos ha permitido perfeccionar nuestras técnicas y mantenernos a la vanguardia de las tendencias y tecnologías más avanzadas.
+            Trabajamos exclusivamente con materiales de alta calidad, como Plata 925 y Oro, para garantizar la durabilidad y el brillo de nuestras creaciones. Somos un equipo de expertos joyeros que se esmera en cada detalle, desde el diseño hasta la acabado final, para asegurarse de que cada pieza sea una obra maestra.
+
+        </p>
+      </div>
+
+      <!-- Mapa de Google -->
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.633055301882!2d-58.38030568477088!3d-34.60413408045908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf22f17dbd%3A0x295f3d5ebff213d2!2sLibertad%20262%2C%20C1012AAB%20CABA%2C%20Argentina!5e0!3m2!1ses!2sar!4v1635778030149!5m2!1ses!2sar" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-item">Redes Sociales</div>
+    <div class="footer-item">Contacto</div>
+    <div class="footer-item">Términos y Condiciones</div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
