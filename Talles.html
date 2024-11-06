@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeria On-Line</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .producto-item {
+            display: inline-block;
+            width: 200px;
+            /* Ajusta el ancho según necesites */
+            text-align: center;
+            margin: 15px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+            border-radius: 8px;
+            /* Bordes ligeramente redondeados */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .producto-item img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            /* Redondeo superior para la imagen */
+        }
+
+        .producto-item h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .producto-item:hover {
+            transform: translateY(-5px);
+            /* Efecto de elevación */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            /* Aumenta la sombra al hacer hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="imagenes/isotipo transparente.svg" width 5%="Joyería on-line" srcset="">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Talles</a>
+            <a href="Nosotros.html">Nosotros</a>
+
+        </nav>
+    </header>
+
+    <!-- Main Body with Carousel 
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/caratula-fondo.jpg" class="d-block w-100" alt="Joyería con significado">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo2.jpg" class="d-block w-100" alt="Segunda imagen">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo4.jpg" class="d-block w-100" alt="Tercera imagen">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/caratula-fondo3.jpg" class="d-block w-100" alt="Cuarta imagen">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  -->
+    <h3>Verifica aca tu talle de anillo</h3>
+    <p>Existen dos maneras de tomar la talla del anillo de forma aproximada. La primera es midiendo con una regla el
+        diámetro interior de un anillo que te quede bien y la otra es, con una cinta métrica, medir la circunferencia de
+        tu dedo sin apretar.</p>
+    <div>
+        <img src="imagenes/medida.jpg alt="">
+    </div>
+    <!-- tabla Section -->
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Circunferencia</th>
+                    <th>Diámetro</th>
+                    <th>Talla</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>49.3 mm</td>
+                    <td>15.7 mm</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>50.6 mm</td>
+                    <td>16 mm</td>
+                    <td>5.5</td>
+                </tr>
+                <tr>
+                    <td>51.9 mm</td>
+                    <td>16.5 mm</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>53.2 mm</td>
+                    <td>16.9 mm</td>
+                    <td>6.5</td>
+                </tr>
+                <tr>
+                    <td>54.5 mm</td>
+                    <td>17.3 mm</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>55.8 mm</td>
+                    <td>17.7 mm</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <td>57.2 mm</td>
+                    <td>18.2 mm</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>58.2 mm</td>
+                    <td>18.6 mm</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>59.4 mm</td>
+                    <td>18.9 mm</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>61.0 mm</td>
+                    <td>19.4 mm</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>63.5 mm</td>
+                    <td>20.2 mm</td>
+                    <td>10.5</td>
+                </tr>
+                <tr>
+                    <td>65 mm</td>
+                    <td>20.6 mm</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>66.2 mm</td>
+                    <td>21 mm</td>
+                    <td>11.5</td>
+                </tr>
+                <tr>
+                    <td>67.5 mm</td>
+                    <td>21.3 mm</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>68.8 mm</td>
+                    <td>21.8 mm</td>
+                    <td>12.5</td>
+                </tr>
+                <tr>
+                    <td>70.2 mm</td>
+                    <td>22.2 mm</td>
+                    <td>13</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-item">Redes Sociales</div>
+        <div class="footer-item">Contacto</div>
+        <div class="footer-item">Términos y Condiciones</div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
