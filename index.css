@@ -1,0 +1,32 @@
+.producto-item {
+    display: inline-block;
+    width: 200px;
+    /* Ajusta el ancho según necesites */
+    text-align: center;
+    margin: 15px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border-radius: 8px;
+    /* Bordes ligeramente redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .producto-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    /* Redondeo superior para la imagen */
+  }
+
+  .producto-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+
+  .producto-item:hover {
+    transform: translateY(-5px);
+    /* Efecto de elevación */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Aumenta la sombra al hacer hover */
+  }

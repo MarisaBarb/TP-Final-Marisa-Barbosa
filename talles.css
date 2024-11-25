@@ -1,0 +1,91 @@
+.producto-item {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.producto-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.producto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.main-content h3 {
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.text {
+    width: 48%;
+}
+
+.video {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video iframe {
+    max-width: 100%;
+}
+
+.table-container {
+    width: 48%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-container th {
+    border-bottom: 2px solid #ccc;
+}
+
+.image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+}
